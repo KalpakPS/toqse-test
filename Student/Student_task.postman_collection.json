@@ -1,0 +1,239 @@
+{
+  "info": {
+    "_postman_id": "fd38911a-ac7f-4966-97b9-b721fbe09c7d",
+    "name": "Student_task",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51650964"
+  },
+  "item": [
+    {
+      "name": "student",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "name",
+              "value": "Hari",
+              "type": "text",
+              "id": 0
+            },
+            {
+              "key": "age",
+              "value": "24",
+              "type": "text",
+              "id": 1
+            },
+            {
+              "key": "course",
+              "value": "AI",
+              "type": "text",
+              "id": 2
+            },
+            {
+              "key": "email",
+              "value": "hari@gmail.com",
+              "type": "text",
+              "id": 3
+            },
+            {
+              "key": "phone",
+              "value": "9069653699",
+              "type": "text",
+              "id": 4
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/student/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "student",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "course_filter",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/course_filter/Python",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "course_filter",
+            "Python"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "age_filter",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/age_filter/23",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "age_filter",
+            "23"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "name_filter",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/name_filter/ak",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "name_filter",
+            "ak"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "course_count",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/student_count",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "student_count"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "contacts",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "name",
+              "value": "Kalpak",
+              "type": "text",
+              "id": 0
+            },
+            {
+              "key": "mobile",
+              "value": "9876543213",
+              "type": "text",
+              "id": 1
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/contacts/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "contacts",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "contact_check",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "mobile",
+              "value": "9876543213",
+              "type": "text",
+              "id": 0
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/contact_check/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "contact_check",
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
